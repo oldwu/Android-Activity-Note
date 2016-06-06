@@ -12,7 +12,7 @@
     
 ## 配置Activity的android:configChanges，可以使得Activity在某些指定异常下不会重建
 * 常用参数：
-    1. locale           本地语言发生改变
+    1. locale           本地语言发生了改变
     2. keyboardHidden   用户调出键盘
     3. orientation      屏幕方向方式改变，API13之后与screenSize同时使用，才能生效
     4. screenSize       屏幕尺寸信息发生改变，API13之后有效
