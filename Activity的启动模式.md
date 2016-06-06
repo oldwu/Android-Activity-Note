@@ -24,3 +24,12 @@
 * 加强的singleTask模式，包含singleTask的全部特性
 * 除此之外，就是Activity只能单独地位于一个任务栈中，例如A是启动模式是singleInstance，启动A，系统会为A创建一个任务栈，并将A放置其中，除非任务栈被销毁，否则后续的请求不会再创建新的Activity
     
+### TaskAffinity
+* 标识了任务栈的名称，默认状态下为应用的包名，也可以在Manifest中手动给Activity设置，android:taskAffinity，相当于手动指定任务栈
+
+### Activity的Flags
+* FLAG_ACTIVITY_NEW_TASK    singleTask
+* FLAG_ACTIVITY_SINGLE_TOP  singleTop
+* FLAG_ACTIVITY_CLEAR_TOP   启动Activity时，位于它之上的Activity全部清除
+
+
